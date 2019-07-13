@@ -5,4 +5,5 @@ pluginManagement {
 }
 rootProject.name = 'kodilla-course'
 include 'kodilla-spring'
+include 'kodilla-good-patterns'
 
