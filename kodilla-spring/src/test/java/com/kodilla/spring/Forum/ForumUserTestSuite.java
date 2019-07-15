@@ -1,5 +1,7 @@
 package com.kodilla.spring.Forum;
 
+import com.kodilla.spring.shape.Shape;
+import com.kodilla.spring.shape.Square;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -11,15 +13,51 @@ import org.springframework.test.context.junit4.SpringRunner;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class ForumUserTestSuite {
+  @Test
+  public void testCircleLoadedIntoContainer() {
+      //Given
+      ApplicationContext context =
+              new AnnotationConfigApplicationContext("com.kodilla.spring");
+      Shape shape = (Shape)context.getBean("circle");
+      //When
+      String name = shape.getShapeName();
+      //Then
+      Assert.assertEquals("Circle", name);
+  }
+
     @Test
-    public void testGetUserName(){
+    public void testTriangleLoadedIntoContainer() {
         //Given
         ApplicationContext context =
-                new AnnotationConfigApplicationContext("com.kodilla.spring.");
-        ForumUser forumUser = context.getBean(ForumUser.class);
+                new AnnotationConfigApplicationContext("com.kodilla.spring");
+        Shape shape = (Shape)context.getBean("triangle");
         //When
-        String name = forumUser.getUserName();
+        String name = shape.getShapeName();
         //Then
-        Assert.assertEquals("John Smiths", name);
+        Assert.assertEquals("Triangle", name);
     }
+
+    @Test
+    public void testSquareLoadedIntoContainer() {
+        //Given
+        ApplicationContext context =
+                new AnnotationConfigApplicationContext("com.kodilla.spring");
+        Shape shape = (Shape)context.getBean("createSquare");
+        //When
+        String name = shape.getShapeName();
+        //Then
+        Assert.assertEquals("Square", name);
+    }
+    @Test
+    public void testShapeLoadedIntoContainer() {
+        //Given
+        ApplicationContext context =
+                new AnnotationConfigApplicationContext("com.kodilla.spring");
+        Shape shape = (Shape)context.getBean("chosenShape");
+        //When
+        String name = shape.getShapeName();
+        //Then
+        System.out.println("This is: " + name);
+    }
+
 }
