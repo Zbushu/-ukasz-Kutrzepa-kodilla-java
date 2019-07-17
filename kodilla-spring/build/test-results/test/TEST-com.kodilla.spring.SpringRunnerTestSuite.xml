@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.kodilla.spring.SpringRunnerTestSuite" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-07-09T16:49:31" hostname="l_oo_k" time="0.139">
-  <properties/>
-  <testcase name="contextLoads" classname="com.kodilla.spring.SpringRunnerTestSuite" time="0.139"/>
-  <system-out><![CDATA[18:49:30.598 [Test worker] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.kodilla.spring.SpringRunnerTestSuite]
+<testsuite name="com.kodilla.spring.SpringRunnerTestSuite" tests="1" skipped="0" failures="0" errors="0"
+           timestamp="2019-07-09T16:49:31" hostname="l_oo_k" time="0.139">
+    <properties/>
+    <testcase name="contextLoads" classname="com.kodilla.spring.SpringRunnerTestSuite" time="0.139"/>
+    <system-out><![CDATA[18:49:30.598 [Test worker] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.kodilla.spring.SpringRunnerTestSuite]
 18:49:30.609 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
 18:49:30.620 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
 18:49:30.649 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.kodilla.spring.SpringRunnerTestSuite] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
@@ -58,5 +59,5 @@
 2019-07-09 18:49:31.253  INFO 9200 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5a00ffce: startup date [Tue Jul 09 18:49:31 CEST 2019]; root of context hierarchy
 2019-07-09 18:49:31.799  INFO 9200 --- [    Test worker] c.kodilla.spring.SpringRunnerTestSuite   : Started SpringRunnerTestSuite in 0.827 seconds (JVM running for 4.142)
 ]]></system-out>
-  <system-err><![CDATA[]]></system-err>
+    <system-err><![CDATA[]]></system-err>
 </testsuite>

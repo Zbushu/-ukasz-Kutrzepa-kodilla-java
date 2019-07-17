@@ -13,6 +13,7 @@ public class ReaderTestSuite {
 
         reader.read();
     }
+
     @Test
     public void testConditional() {
         ApplicationContext context = new AnnotationConfigApplicationContext(ReaderConfig.class);

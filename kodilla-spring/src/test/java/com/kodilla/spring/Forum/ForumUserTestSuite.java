@@ -13,24 +13,24 @@ import org.springframework.test.context.junit4.SpringRunner;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class ForumUserTestSuite {
-  @Test
-  public void testCircleLoadedIntoContainer() {
-      //Given
-      ApplicationContext context =
-              new AnnotationConfigApplicationContext("com.kodilla.spring");
-      Shape shape = (Shape)context.getBean("circle");
-      //When
-      String name = shape.getShapeName();
-      //Then
-      Assert.assertEquals("Circle", name);
-  }
+    @Test
+    public void testCircleLoadedIntoContainer() {
+        //Given
+        ApplicationContext context =
+                new AnnotationConfigApplicationContext("com.kodilla.spring");
+        Shape shape = (Shape) context.getBean("circle");
+        //When
+        String name = shape.getShapeName();
+        //Then
+        Assert.assertEquals("Circle", name);
+    }
 
     @Test
     public void testTriangleLoadedIntoContainer() {
         //Given
         ApplicationContext context =
                 new AnnotationConfigApplicationContext("com.kodilla.spring");
-        Shape shape = (Shape)context.getBean("triangle");
+        Shape shape = (Shape) context.getBean("triangle");
         //When
         String name = shape.getShapeName();
         //Then
@@ -42,18 +42,19 @@ public class ForumUserTestSuite {
         //Given
         ApplicationContext context =
                 new AnnotationConfigApplicationContext("com.kodilla.spring");
-        Shape shape = (Shape)context.getBean("createSquare");
+        Shape shape = (Shape) context.getBean("createSquare");
         //When
         String name = shape.getShapeName();
         //Then
         Assert.assertEquals("Square", name);
     }
+
     @Test
     public void testShapeLoadedIntoContainer() {
         //Given
         ApplicationContext context =
                 new AnnotationConfigApplicationContext("com.kodilla.spring");
-        Shape shape = (Shape)context.getBean("chosenShape");
+        Shape shape = (Shape) context.getBean("chosenShape");
         //When
         String name = shape.getShapeName();
         //Then

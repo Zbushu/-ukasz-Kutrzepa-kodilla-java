@@ -10,7 +10,7 @@ import java.util.Arrays;
 
 public class LibraryTestSuite {
     @Test
-    public void testLoadFromDb(){
+    public void testLoadFromDb() {
         ApplicationContext context = new AnnotationConfigApplicationContext("com.kodilla.spring");
         Library library = context.getBean(Library.class);
         //When
@@ -18,6 +18,7 @@ public class LibraryTestSuite {
         //Then
         //do nothing...
     }
+
     @Test
     public void testSaveToDb() {
         //Given
@@ -28,8 +29,9 @@ public class LibraryTestSuite {
         //Then
         //nothing...
     }
+
     @Test
-    public void testContext(){
+    public void testContext() {
         //Given
         ApplicationContext context = new AnnotationConfigApplicationContext("com.kodilla.spring");
         //When & Then

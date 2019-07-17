@@ -9,7 +9,8 @@ public class FlightList {
     public HashSet<Flight> getFlights() {
         return flights;
     }
-    public void addFlight(Flight flight){
+
+    public void addFlight(Flight flight) {
         flights.add(flight);
     }
 }

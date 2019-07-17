@@ -8,13 +8,14 @@ import java.util.Random;
 @Configuration
 public class ShapesFactory {
     @Bean
-    public Square createSquare(){
+    public Square createSquare() {
         return new Square();
     }
+
     @Bean
     public Shape chosenShape() {
         Shape theShape;
-        Random generator =new Random();
+        Random generator = new Random();
         int chosen = generator.nextInt(3);
         if (chosen == 0) {
             theShape = new Triangle();

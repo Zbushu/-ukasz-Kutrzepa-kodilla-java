@@ -13,13 +13,13 @@ import org.springframework.test.context.junit4.SpringRunner;
 @SpringBootTest
 public class CalculatorTestSuite {
     @Test
-    public void testCalculations(){
+    public void testCalculations() {
         //Given
         ApplicationContext context = new AnnotationConfigApplicationContext("com.kodilla.spring");
         Calculator calculator = context.getBean(Calculator.class);
         //When
-        double resultAdd = calculator.add(2.1,2.2);
-        double resultSub = calculator.sub(4.1,2.1);
+        double resultAdd = calculator.add(2.1, 2.2);
+        double resultSub = calculator.sub(4.1, 2.1);
         double resultMul = calculator.mul(2.0, 2.0);
         double resultDiv = calculator.div(4.0, 2.0);
         //Then

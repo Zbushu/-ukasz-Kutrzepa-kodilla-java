@@ -17,11 +17,13 @@ public class ReaderConfig {
     public Reader getReader() {
         return new Reader(book);
     }
+
     @Bean(name = "book1")
     @Scope("prototype")
     public Book getBookOne() {
         return new Book("The Book number one");
     }
+
     @Bean(name = "book2")
     @Scope("prototype")
     @Conditional(IfDayIsOddCondition.class)
