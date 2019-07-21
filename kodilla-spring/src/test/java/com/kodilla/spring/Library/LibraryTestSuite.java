@@ -3,11 +3,16 @@ package com.kodilla.spring.Library;
 import com.kodilla.spring.library.Library;
 import com.kodilla.spring.library.LibraryConfig;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.Arrays;
 
+@RunWith(SpringRunner.class)
+@SpringBootTest(classes = Library.class)
 public class LibraryTestSuite {
     @Test
     public void testLoadFromDb() {

@@ -5,12 +5,15 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class LibraryConfig {
-    @Bean
+
+    //@Qualifier("library 2")
+
+    @Bean//(name="library 2")
     public Library library() {
         return new Library(libraryDbController());
     }
 
-    @Bean
+    @Bean//(name="library Db Controller 2")
     public LibraryDbController libraryDbController() {
         return new LibraryDbController();
     }

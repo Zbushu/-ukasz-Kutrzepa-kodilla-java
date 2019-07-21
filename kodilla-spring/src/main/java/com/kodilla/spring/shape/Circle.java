@@ -8,6 +8,6 @@ import org.springframework.stereotype.Component;
 public class Circle implements Shape {
     @Override
     public String getShapeName() {
-        return "Circle";
+        return "This is a circle.";
     }
 }

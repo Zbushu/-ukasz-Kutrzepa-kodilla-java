@@ -1,7 +1,5 @@
 package com.kodilla.spring.Forum;
 
-import com.kodilla.spring.shape.Shape;
-import com.kodilla.spring.shape.Square;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -14,51 +12,13 @@ import org.springframework.test.context.junit4.SpringRunner;
 @SpringBootTest
 public class ForumUserTestSuite {
     @Test
-    public void testCircleLoadedIntoContainer() {
+    public void testGetUsername() {
         //Given
-        ApplicationContext context =
-                new AnnotationConfigApplicationContext("com.kodilla.spring");
-        Shape shape = (Shape) context.getBean("circle");
+        ApplicationContext context = new AnnotationConfigApplicationContext("com.kodilla.spring");
+        ForumUser user = context.getBean(ForumUser.class);
         //When
-        String name = shape.getShapeName();
+        String name = user.getUserName();
         //Then
-        Assert.assertEquals("Circle", name);
+        Assert.assertEquals("John Smiths", name);
     }
-
-    @Test
-    public void testTriangleLoadedIntoContainer() {
-        //Given
-        ApplicationContext context =
-                new AnnotationConfigApplicationContext("com.kodilla.spring");
-        Shape shape = (Shape) context.getBean("triangle");
-        //When
-        String name = shape.getShapeName();
-        //Then
-        Assert.assertEquals("Triangle", name);
-    }
-
-    @Test
-    public void testSquareLoadedIntoContainer() {
-        //Given
-        ApplicationContext context =
-                new AnnotationConfigApplicationContext("com.kodilla.spring");
-        Shape shape = (Shape) context.getBean("createSquare");
-        //When
-        String name = shape.getShapeName();
-        //Then
-        Assert.assertEquals("Square", name);
-    }
-
-    @Test
-    public void testShapeLoadedIntoContainer() {
-        //Given
-        ApplicationContext context =
-                new AnnotationConfigApplicationContext("com.kodilla.spring");
-        Shape shape = (Shape) context.getBean("chosenShape");
-        //When
-        String name = shape.getShapeName();
-        //Then
-        System.out.println("This is: " + name);
-    }
-
 }
