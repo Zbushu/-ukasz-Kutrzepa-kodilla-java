@@ -6,6 +6,16 @@ import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
+@NamedQuery(
+        name = "Employee.retrieveEmployeesWithSurname",
+        query = "FROM Employee WHERE lastname LIKE :LASTNAME"
+)
+
+@NamedQuery(
+        name = "Employee.retrieveEmployeeWithSurnameContaining",
+        query = "FROM Employee WHERE lastname LIKE :ARG"
+)
+
 @Entity
 @Table(name = "EMPLOYEES")
 public class Employee {
