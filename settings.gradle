@@ -3,6 +3,9 @@ include 'kodilla-patterns'
 include 'kodilla-spring'
 include 'kodilla-spring-web'
 include 'kodilla-jdbc'
+<<<<<<< HEAD
 include 'kodilla-patterns2'
+=======
+>>>>>>> 1902aba58db936b866eea613a09b219bdfa93f7c
 include 'kodilla-hibernate'
 
