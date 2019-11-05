@@ -3,4 +3,6 @@ include 'kodilla-patterns'
 include 'kodilla-spring'
 include 'kodilla-spring-web'
 include 'kodilla-jdbc'
+include 'kodilla-patterns2'
+include 'kodilla-hibernate'
 
